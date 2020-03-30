@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FCC: Survey</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div class="cont">
+    <div class="container">
+
+      <header>
+        <h1 id="title">Tech Interest Survey Form</h1>
+        <p id="description">thank you for giving your time to improve us.</p>
+      </header>
+
+      <form action="" id="survey-form">
+        <label id="name-label" >Name</label><br>
+        <input class="form-control form-control-lg" type="text" id="name" placeholder="Enter your name" required><br>
+
+        <label id="email-label">Email</label><br>
+        <input class="form-control form-control-lg" type="email" id="email" placeholder="Enter your email" required><br>
+
+        <label id="number-label">Age(optional)</label><br>
+        <input class="form-control form-control-lg" type="number" id="number" min="10" max="100" placeholder="Age"><br>
+
+        <label for="role-label">Which option best describes your current role?</label><br>
+        <select class="form-control form-control-lg" name="" id="dropdown">
+          <option value="placeholder" selected disabled>Select current role</option>
+          <option value="student">Student</option>
+          <option value="full-time-job">Full Time Job</option>
+          <option value="fill-time-learner">Full Time Learner</option>
+          <option value="not-to-say">Prefer Not To Say</option>
+          <option value="other">Other</option>
+        </select><br>
+        <div id="rating">
+          <label for="rating">Rate us</label><br>
+          <input type="radio" name="rating" id="5" value="5" checked> <label>5 </label> <br>
+          <input type="radio" name="rating" id="4" value="4"> <label>4 </label> <br>
+          <input type="radio" name="rating" id="3" value="3"> <label>3 </label> <br>
+          <input type="radio" name="rating" id="2" value="2"> <label>2 </label> <br>
+          <input type="radio" name="rating" id="1" value="1"> <label>1 </label> <br>
+        </div>
+
+        <div id="tech-check">
+          <label for="tech-check">Select Your Technolgies (check all that apply)</label><br>
+          <input type="checkbox" name="" id="" value="React"> <label> React</label> <br>
+          <input type="checkbox" name="" id="" value="Angular"> <label> Angular</label> <br>
+          <input type="checkbox" name="" id="" value="Vue"> <label> Vue</label><br>
+          <input type="checkbox" name="" id="" value="D3js"> <label> D3.js</label><br>
+          <input type="checkbox" name="" id="" value="ML"> <label> Machine Learning</label><br>
+          <input type="checkbox" name="" id="" value="NN"> <label> Neural Network</label><br>
+          <input type="checkbox" name="" id="" value="IOT"> <label> IOT</label><br>
+        </div><br>
+
+        <label for="suggestion">Any Suggestion for us , feel free to tell us!</label><br>
+        <textarea name="suggestion" id=""></textarea>
+        <br>
+
+        <button class="btn btn-primary btn-lg btn-block" type="submit" id="submit">submit</button>
+
+      </form>
+
+</body>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>
