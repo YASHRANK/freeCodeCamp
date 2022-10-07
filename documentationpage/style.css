@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: left;
+  font-family: -apple-system, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#nav-header {
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#navbar {
+  order: 0;
+  position: fixed;
+  min-width: 290px;
+  width: 300px;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+
+  justify-content: center;
+  border-right: 3px solid gray;
+  background: whitesmoke;
+  overflow-x: hidden;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list li {
+  margin: 1px;
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border: 0.5px solid transparent;
+}
+.nav-link {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav-list li:hover {
+  background-color: rgb(244, 244, 244);
+  transition-duration: 0.1s;
+  border: 0.5px solid gray;
+}
+
+#main-doc {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 320px;
+  line-height: 1.5;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding-left: 40px;
+}
+
+.main-section header {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-section p,
+li {
+  font-size: 1.8rem;
+}
+.main-section ul {
+  font-size: 1.8rem;
+  padding-left: 10%;
+}
+
+code {
+  box-shadow: 2px 2px 3px 0px rgb(128, 128, 128);
+  line-height: 2;
+  padding: 10px;
+
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.822);
+  color: whitesmoke;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 425px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    width: 100%;
+    border: 4px solid black;
+  }
+  #nav-bar {
+    order: 0;
+    margin: 0px auto;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    width: 100%;
+    position: relative;
+  }
+
+  #main-doc {
+    order: 1;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-section {
+    margin: 10px;
+    padding: 10px;
+  }
+}
